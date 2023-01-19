@@ -20,7 +20,7 @@ Parto con una lluvia de ideas y observaciones:
 - La espiral más pequeña sería 1x1.
 - Debo encontrar una forma de recrear la espiral cualquiera sea el n.
 
-Lo primero que hago es agarrar un cuaderno y escribir distintas espirales para encontrar un patrón, identifico que sigue una secuencia donde, desde el centro avanza una posición a la derecha, una hacia abajo, dos hacia la izquierda, dos hacia arriba, tres hacia la derecha, tres hacia abajo, etc y dependiendo del orden de la espiral, por lo que crearia dos bucles para rellenar la matriz a partir del centro y con una variable modulo 4 (n % 4) para ir rellenando la matriz en espiral (0 - derecha, 1 - abajo, 2 - izquierda 3 - arriba). Luego pienso que esta solución tendría complejidad exponencial, se tendria que crear una matriz muy grande para una de 1003x1003 o más, además estaría haciendo algo que no se pide que es recrear la matriz cuando el objetivo pide encontrar la suma de las diagonales.
+Lo primero que hago es agarrar un cuaderno y escribir distintas espirales para encontrar un patrón, identifico que sigue una secuencia donde, desde el centro avanza una posición a la derecha, una hacia abajo, dos hacia la izquierda, dos hacia arriba, tres hacia la derecha, tres hacia abajo, etc y dependiendo del orden de la espiral, por lo que crearia dos bucles para rellenar la matriz a partir del centro y con una variable modulo 4 (n % 4) para ir rellenando la matriz en espiral (0 - derecha, 1 - abajo, 2 - izquierda 3 - arriba, etc). Luego pienso que esta solución tendría complejidad exponencial, se tendria que crear una matriz muy grande para una de 1003x1003 o más, además estaría haciendo algo que no se pide que es recrear la matriz cuando el objetivo pide encontrar la suma de las diagonales.
 
 Ahora comienzo a cambiar el planteamiento y sumo las diagonales centrales para una espiral de 1x1, 3x3, 5x5, 7x7, 9x9, donde se obtiene:
 
@@ -36,7 +36,7 @@ Pienso que podria existir un patrón o secuencia y haciendo la resta para encont
 52, 84, 116, 48 ...
 32, 32, 32, ...
 ```
-se obtiene que se trata de una sucesión de tercer orden. No recuerdo como se obtenia la formula general por lo que acudo a Youtube. https://www.youtube.com/watch?v=wrTsbbPDrgM
+se obtiene que se trata de una sucesión de tercer orden. No recuerdo como se obtenia la formula general para una sucesión de este tipo, por lo que acudo a Youtube. https://www.youtube.com/watch?v=wrTsbbPDrgM
 
 Obtengo:
 
